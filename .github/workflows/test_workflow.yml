@@ -3,8 +3,7 @@ on:
   workflow_dispatch: ""
 jobs:
   "test_job":
-    runsOn: "ubuntu-latest"
+    runs-on: "ubuntu-latest"
     steps:
-    - !<it.krzeminski.githubactions.yaml.YamlRunStep>
-      name: "Hello world!"
+    - name: "Hello world!"
       run: "echo 'hello!'"
