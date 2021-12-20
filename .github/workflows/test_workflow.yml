@@ -1,6 +1,5 @@
 name: "Test workflow"
-on:
-  "push": ""
+on: {}
 jobs:
   "test_job":
     runs-on: "ubuntu-latest"
