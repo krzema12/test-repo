@@ -5,5 +5,7 @@ jobs:
   "test_job":
     runs-on: "ubuntu-latest"
     steps:
+    - name: "it.krzeminski.githubactions.yaml.YamlExternalAction"
+      uses: "actions/checkout@v2"
     - name: "it.krzeminski.githubactions.yaml.YamlRunStep"
       run: "echo 'hello!'"
