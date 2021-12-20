@@ -1,6 +1,7 @@
 name: "Test workflow"
 on:
   workflow_dispatch: {}
+  push: null
 jobs:
   "test_job":
     runs-on: "ubuntu-latest"
