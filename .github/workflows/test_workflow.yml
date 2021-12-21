@@ -1,6 +1,6 @@
 name: "Test workflow"
 on:
-  push: {}
+  workflow_dispatch: {}
 jobs:
   "test_job":
     runs-on: "ubuntu-latest"
@@ -11,9 +11,14 @@ jobs:
         
         fetch-depth: 0
     - 
-      name: "Install Kotlin for scripting"
-      run: "sudo snap install --classic kotlin"
+      name: "Echo to the world"
+      run: "echo 'hello ${{ matrix.testTask }}'"
     needs: []
+    strategy:
+      matrix:
+        "testTask":
+        - "pythonTest"
+        - "microPythonTest"
   "test_job2":
     runs-on: "ubuntu-latest"
     steps:
@@ -22,3 +27,4 @@ jobs:
       run: "echo 'hello!'"
     needs:
     - "test_job"
+    strategy: {}
