@@ -13,3 +13,12 @@ jobs:
     - 
       name: "Install Kotlin for scripting"
       run: "sudo snap install --classic kotlin"
+    needs: []
+  "test_job2":
+    runs-on: "ubuntu-latest"
+    steps:
+    - 
+      name: "Some random echo"
+      run: "echo 'hello!'"
+    needs:
+    - "test_job"
