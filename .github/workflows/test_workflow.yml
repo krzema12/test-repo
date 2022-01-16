@@ -9,22 +9,9 @@ jobs:
       uses: "actions/checkout@v2"
       with:
         
-        fetch-depth: 0
+        fetch-depth: 1
     - 
-      name: "Echo to the world"
-      run: "echo 'hello ${{ matrix.testTask }}'"
-    needs: []
-    strategy:
-      matrix:
-        "testTask":
-        - "pythonTest"
-        - "microPythonTest"
-  "test_job2":
-    runs-on: "ubuntu-latest"
-    steps:
-    - 
-      name: "Some random echo"
+      name: "Hello world!"
       run: "echo 'hello!'"
-    needs:
-    - "test_job"
+    needs: []
     strategy: {}
