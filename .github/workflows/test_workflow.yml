@@ -1,3 +1,6 @@
+# This file was generated using Kotlin DSL (.github/workflows/test_workflow.main.kts).
+# If you want to modify the workflow, please change the Kotlin file and regenerate this YAML file.
+
 name: "Test workflow"
 on:
   push: {}
@@ -29,5 +32,6 @@ jobs:
     - 
       name: "Hello world!"
       run: "echo 'hello!'"
-    needs: ["check_yaml_consistency"]
+    needs:
+    - "check_yaml_consistency"
     strategy: {}
