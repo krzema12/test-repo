@@ -2,7 +2,7 @@ name: "Test workflow"
 on:
   push: {}
 jobs:
-  "Check consistency of generated YAML file":
+  "check_yaml_consistency":
     runs-on: "ubuntu-latest"
     steps:
     - 
