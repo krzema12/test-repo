@@ -10,7 +10,7 @@ jobs:
       run: "sudo snap install --classic kotlin"
     - 
       name: "Consistency check"
-      run: "diff -u '.github/workflows/test_workflow.yaml' <('.github/workflows/test_workflow.main.kts')"
+      run: "diff -u '.github/workflows/test_workflow.yml' <('.github/workflows/test_workflow.main.kts')"
     needs: []
     strategy: {}
   "test_job":
