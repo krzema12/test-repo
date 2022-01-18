@@ -2,6 +2,17 @@ name: "Test workflow"
 on:
   push: {}
 jobs:
+  "Check consistency of generated YAML file":
+    runs-on: "ubuntu-latest"
+    steps:
+    - 
+      name: "Install Kotlin"
+      run: "sudo snap install --classic kotlin"
+    - 
+      name: "Consistency check"
+      run: "diff -u '.github/workflows/test_workflow.yaml' <('.github/workflows/test_workflow.main.kts')"
+    needs: []
+    strategy: {}
   "test_job":
     runs-on: "ubuntu-latest"
     steps:
