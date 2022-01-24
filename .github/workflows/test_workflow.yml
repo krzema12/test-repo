@@ -1,37 +1,20 @@
-# This file was generated using Kotlin DSL (.github/workflows/test_workflow.main.kts).
+# This file was generated using Kotlin DSL (script.main.kts).
 # If you want to modify the workflow, please change the Kotlin file and regenerate this YAML file.
+# Generated with https://github.com/krzema12/github-actions-kotlin-dsl
 
-name: "Test workflow"
+name: Test workflow
+
 on:
-  push: {}
+  push:
+
 jobs:
-  "check_yaml_consistency":
-    runs-on: "ubuntu-latest"
-    steps:
-    - 
-      uses: "actions/checkout@v2"
-      with:
-        
-        fetch-depth: 1
-    - 
-      name: "Install Kotlin"
-      run: "sudo snap install --classic kotlin"
-    - 
-      name: "Consistency check"
-      run: "diff -u '.github/workflows/test_workflow.yml' <('.github/workflows/test_workflow.main.kts')"
-    needs: []
-    strategy: {}
   "test_job":
     runs-on: "ubuntu-latest"
     steps:
-    - 
-      uses: "actions/checkout@v2"
-      with:
-        
-        fetch-depth: 1
-    - 
-      name: "Hello world!"
-      run: "echo 'hello!'"
-    needs:
-    - "check_yaml_consistency"
-    strategy: {}
+      - name: Check out
+        uses: actions/checkout@v2
+      - name: Hello world!
+        run: |
+          echo "hello1"
+    
+          echo 'hello2'
