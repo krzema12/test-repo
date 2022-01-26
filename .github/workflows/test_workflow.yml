@@ -6,6 +6,13 @@ name: Test workflow
 
 on:
   push:
+  workflow_call:
+    inputs:
+      username:
+        description: 'A username passed from the caller workflow'
+        default: 'john-doe'
+        required: false
+        type: string
 
 jobs:
   "test_job":
