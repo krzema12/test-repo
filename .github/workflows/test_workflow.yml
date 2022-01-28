@@ -6,6 +6,53 @@ name: Test workflow
 
 on:
   push:
+  workflow_dispatch:
+    inputs:
+      run-refreshVersions-task:
+        description: "Run the refreshVersions task"
+        required: true
+        type: boolean
+        default: 'false'
+      sample-kotlin:
+        description: "Enable sample-kotlin"
+        required: true
+        type: boolean
+        default: 'true'
+      sample-groovy:
+        description: "Enable sample-groovy"
+        required: true
+        type: boolean
+        default: 'true'
+      sample-multi-modules:
+        description: "Enable sample-multi-modules"
+        required: true
+        type: boolean
+        default: 'true'
+      sample-kotlin-js:
+        description: "Enable sample-kotlin-js"
+        required: true
+        type: boolean
+        default: 'true'
+      sample-android:
+        description: "Enable sample-android"
+        required: true
+        type: boolean
+        default: 'false'
+      run-on:
+        type: choice
+        description: "Where to run this workflow"
+        default: 'ubuntu-latest'
+        required: true
+        options:
+          - windows-2022
+          - windows-2019
+          - windows-latest
+          - macos-11
+          - macos-10.5
+          - macos-latest
+          - ubuntu-20.04
+          - ubuntu-18.04
+          - ubuntu-latest
 
 jobs:
   "check_yaml_consistency":
