@@ -1,4 +1,4 @@
-# This file was generated using Kotlin DSL (/tmp/it.krzeminski.githubactions.EndToEndTest251588526669498683.tmp).
+# This file was generated using Kotlin DSL (script.main.kts).
 # If you want to modify the workflow, please change the Kotlin file and regenerate this YAML file.
 # Generated with https://github.com/krzema12/github-actions-kotlin-dsl
 
@@ -6,72 +6,12 @@ name: Test workflow
 
 on:
   push:
-  workflow_dispatch:
-    inputs:
-      run-refreshVersions-task:
-        description: "Run the refreshVersions task"
-        required: true
-        type: boolean
-        default: 'false'
-      sample-kotlin:
-        description: "Enable sample-kotlin"
-        required: true
-        type: boolean
-        default: 'true'
-      sample-groovy:
-        description: "Enable sample-groovy"
-        required: true
-        type: boolean
-        default: 'true'
-      sample-multi-modules:
-        description: "Enable sample-multi-modules"
-        required: true
-        type: boolean
-        default: 'true'
-      sample-kotlin-js:
-        description: "Enable sample-kotlin-js"
-        required: true
-        type: boolean
-        default: 'true'
-      sample-android:
-        description: "Enable sample-android"
-        required: true
-        type: boolean
-        default: 'false'
-      run-on:
-        type: choice
-        description: "Where to run this workflow"
-        default: 'ubuntu-latest'
-        required: true
-        options:
-          - windows-2022
-          - windows-2019
-          - windows-latest
-          - macos-11
-          - macos-10.5
-          - macos-latest
-          - ubuntu-20.04
-          - ubuntu-18.04
-          - ubuntu-latest
 
 jobs:
-  "check_yaml_consistency":
+  "test_job":
     runs-on: "ubuntu-latest"
     steps:
       - name: Hello world!
-        run: echo 'hello from consistency job!'
-  "test_job_1":
-    runs-on: "ubuntu-latest"
-    needs:
-      - "check_yaml_consistency"
-    steps:
-      - name: Hello world!
-        run: echo 'hello!'
-  "test_job_2":
-    runs-on: "ubuntu-latest"
-    needs:
-      - "test_job_1"
-      - "check_yaml_consistency"
-    steps:
-      - name: Hello world, again!
-        run: echo 'hello again!'
+        env:
+          ENVVAR: It works!
+        run: echo "'hello! $ENVVAR"
