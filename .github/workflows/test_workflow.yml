@@ -16,3 +16,4 @@ jobs:
             - uses: rnett/find-regex@v1.2
               with:
                 regex: runs
+                command: less .github/workflows/test_workflow.yml
