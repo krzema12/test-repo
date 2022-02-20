@@ -13,8 +13,10 @@ jobs:
     "Job1":
         runs-on: "ubuntu-latest"
         steps:
-            - uses: rnett/find-regex@v1.2
-              with:
-                regex: runs
-                files: .github/workflows/test_workflow.yml
-                commands: less .github/workflows/test_workflow.yml
+          - name: Get version
+            id: get_version
+            uses: rnett/find-regex@v1.1
+            with:
+              regex: 'version ?(?:=|:) ?"?([\w.\-_]+)"?'
+              files: "gradle.properties,build.gradle.kts,build.gradle"
+              commands: "./gradlew properties"
