@@ -13,8 +13,6 @@ jobs:
     "Job1":
         runs-on: "ubuntu-latest"
         steps:
-            - run: echo hello
-    "Job1":
-        runs-on: "ubuntu-latest"
-        steps:
-            - run: echo hello
+            - uses: rnett/find-regex@v1.2
+              with:
+                regex: runs
