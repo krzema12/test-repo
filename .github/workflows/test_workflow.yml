@@ -19,4 +19,4 @@ jobs:
             with:
               regex: 'version ?(?:=|:) ?"?([\w.\-_]+)"?'
               files: "gradle.properties,build.gradle.kts,build.gradle"
-              commands: "./gradlew properties"
+              commands: "less gradle.properties"
