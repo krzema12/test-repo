@@ -14,6 +14,7 @@ jobs:
         runs-on: "ubuntu-latest"
         steps:
         - uses: actions/checkout@v2
+        - uses: krzema12/github-actions-typing@v0
         - name: Generate gitversion properties 
           uses: walterblacc/gitversion-action@master
           id: gitversion
