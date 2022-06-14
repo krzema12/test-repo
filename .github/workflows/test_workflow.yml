@@ -13,10 +13,5 @@ jobs:
     "Job1":
         runs-on: "ubuntu-latest"
         steps:
-        - uses: actions/checkout@v2
+        - uses: actions/checkout@v3
         - uses: krzema12/github-actions-typing@v0
-        - name: Generate gitversion properties 
-          uses: walterblacc/gitversion-action@master
-          id: gitversion
-        - run: |
-            echo "GitVersion_SemVer: ${{steps.versioning.outputs.GitVersion_SemVer}}"
