@@ -13,6 +13,17 @@ inputs:
   permissions:
     description: 'Who should have access.'
     type: inttteger
+  some-list-with-comma:
+    description: 'testing lists'
+    type: list
+    separator: ','
+  some-list-with-newline:
+    description: 'testing lists'
+    type: list
+    separator: '\n'
+  some-list-without-separator:
+    description: 'testing lists'
+    type: list
 runs:
   using: 'node16'
   image: 'dist/main.js'
