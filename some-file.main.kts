@@ -6,7 +6,7 @@
 
 @file : DependsOn
   (
-  "org.jetbrains.lets-plot:lets-plot-kotlin-jvm:3.0.2"
+  "org.jetbrains.lets-plot:lets-plot-kotlin-jvm:3.3.0"
 
 )
 
