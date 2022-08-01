@@ -1,7 +1,7 @@
 #!/usr/bin/env kotlin
 @file:DependsOn("it.krzeminski:github-actions-kotlin-dsl:[0.2.0,)")
 @file:DependsOn(
-  "org.eclipse.jgit:org.eclipse.jgit:[4.6.0.201612231935-r]"
+  "org.eclipse.jgit:org.eclipse.jgit:[4.11.9.201909030838-r]"
 )
 
 @file : DependsOn
