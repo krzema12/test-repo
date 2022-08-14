@@ -15,7 +15,4 @@ jobs:
     - id: step-1
       run: echo 'hello!'
     - id: step-2
-      run: 'true'
-      if: |-
-        always()
-        && (steps.some-action.outcome == 'success')
+      run: ':'
