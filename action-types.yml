@@ -25,7 +25,7 @@ inputs:
             - Ubuntu-18.04
             - Ubuntu-16.04
 
-    use-cache:
+    use-cach:
         type: boolean
 
     wsl-conf:
@@ -50,7 +50,7 @@ inputs:
         type: string
 
 outputs:
-    wsl-shell-wrapper-path:
+    wsl-shell-wrapper-pat:
         type: string
 
     wsl-shell-distribution-wrapper-path:
