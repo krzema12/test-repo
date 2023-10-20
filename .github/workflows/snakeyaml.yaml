@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - id: step-0
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - id: step-1
       run: echo 'hello!'
     - id: step-2
