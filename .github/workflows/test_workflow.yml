@@ -14,6 +14,7 @@ jobs:
         runs-on: "ubuntu-latest"
         steps:
         - uses: actions/checkout@v3
+        - run: echo "${{ toJSON(github) }}"
         - uses: krzema12/github-actions-typing@v0
           with:
             verbose: true
