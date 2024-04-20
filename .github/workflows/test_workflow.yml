@@ -15,8 +15,8 @@ jobs:
         steps:
         - run: echo "${{ toJSON(github) }}" > github.txt
         - run: |
-          git config --global user.email "<>"
-          git config --global user.name "GitHub Actions Bot"
-          git add .
-          git commit --allow-empty -m "Update context dump"
-          git push
+            git config --global user.email "<>"
+            git config --global user.name "GitHub Actions Bot"
+            git add .
+            git commit --allow-empty -m "Update context dump"
+            git push
