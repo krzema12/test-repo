@@ -1,14 +1,14 @@
 {
-  "token": "ghs_V065tYE2Y2N6CWrVOl5iFWrsknu08531fvZt",
+  "token": "ghs_UxwFWoJulQhb7yQcAR7qxjgd27q0pu3q3YMh",
   "job": "Job1",
   "ref": "refs/heads/main",
-  "sha": "ffab49dc6df27d3e77883a8a56e6e0eb541abd0a",
+  "sha": "5818b68f67b7b96f36857bb2e7dff9470901664f",
   "repository": "krzema12/test-repo",
   "repository_owner": "krzema12",
   "repository_owner_id": "3110813",
   "repositoryUrl": "git://github.com/krzema12/test-repo.git",
-  "run_id": "8780362099",
-  "run_number": "207",
+  "run_id": "9332149011",
+  "run_number": "210",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -24,9 +24,9 @@
   "base_ref": "",
   "event_name": "push",
   "event": {
-    "after": "ffab49dc6df27d3e77883a8a56e6e0eb541abd0a",
+    "after": "5818b68f67b7b96f36857bb2e7dff9470901664f",
     "base_ref": null,
-    "before": "095edb58ed938ec1ab8b48a899426a48923b082a",
+    "before": "45761e5a48659b67a0a60b06902a7a7037f538df",
     "commits": [
       {
         "author": {
@@ -40,14 +40,14 @@
           "username": "web-flow"
         },
         "distinct": true,
-        "id": "ffab49dc6df27d3e77883a8a56e6e0eb541abd0a",
-        "message": "Update test_workflow.yml",
-        "timestamp": "2024-04-22T09:44:36+02:00",
-        "tree_id": "055a84ce2e7726f7f6fd7f73b91923db59c5d6a2",
-        "url": "https://github.com/krzema12/test-repo/commit/ffab49dc6df27d3e77883a8a56e6e0eb541abd0a"
+        "id": "5818b68f67b7b96f36857bb2e7dff9470901664f",
+        "message": "Delete renovate.json",
+        "timestamp": "2024-06-01T19:57:06+02:00",
+        "tree_id": "008b8b95e3cd41aca788322c751c4a21a0d0db6a",
+        "url": "https://github.com/krzema12/test-repo/commit/5818b68f67b7b96f36857bb2e7dff9470901664f"
       }
     ],
-    "compare": "https://github.com/krzema12/test-repo/compare/095edb58ed93...ffab49dc6df2",
+    "compare": "https://github.com/krzema12/test-repo/compare/45761e5a4865...5818b68f67b7",
     "created": false,
     "deleted": false,
     "forced": false,
@@ -63,11 +63,11 @@
         "username": "web-flow"
       },
       "distinct": true,
-      "id": "ffab49dc6df27d3e77883a8a56e6e0eb541abd0a",
-      "message": "Update test_workflow.yml",
-      "timestamp": "2024-04-22T09:44:36+02:00",
-      "tree_id": "055a84ce2e7726f7f6fd7f73b91923db59c5d6a2",
-      "url": "https://github.com/krzema12/test-repo/commit/ffab49dc6df27d3e77883a8a56e6e0eb541abd0a"
+      "id": "5818b68f67b7b96f36857bb2e7dff9470901664f",
+      "message": "Delete renovate.json",
+      "timestamp": "2024-06-01T19:57:06+02:00",
+      "tree_id": "008b8b95e3cd41aca788322c751c4a21a0d0db6a",
+      "url": "https://github.com/krzema12/test-repo/commit/5818b68f67b7b96f36857bb2e7dff9470901664f"
     },
     "pusher": {
       "email": "3110813+krzema12@users.noreply.github.com",
@@ -156,9 +156,9 @@
       },
       "private": false,
       "pulls_url": "https://api.github.com/repos/krzema12/test-repo/pulls{/number}",
-      "pushed_at": 1713771876,
+      "pushed_at": 1717264626,
       "releases_url": "https://api.github.com/repos/krzema12/test-repo/releases{/id}",
-      "size": 251,
+      "size": 256,
       "ssh_url": "git@github.com:krzema12/test-repo.git",
       "stargazers": 0,
       "stargazers_count": 0,
@@ -171,7 +171,7 @@
       "teams_url": "https://api.github.com/repos/krzema12/test-repo/teams",
       "topics": [],
       "trees_url": "https://api.github.com/repos/krzema12/test-repo/git/trees{/sha}",
-      "updated_at": "2024-04-22T07:43:30Z",
+      "updated_at": "2024-04-22T07:44:50Z",
       "url": "https://github.com/krzema12/test-repo",
       "visibility": "public",
       "watchers": 0,
@@ -207,15 +207,15 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "workflow_ref": "krzema12/test-repo/.github/workflows/test_workflow.yml@refs/heads/main",
-  "workflow_sha": "ffab49dc6df27d3e77883a8a56e6e0eb541abd0a",
+  "workflow_sha": "5818b68f67b7b96f36857bb2e7dff9470901664f",
   "workspace": "/home/runner/work/test-repo/test-repo",
   "action": "__run",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "",
   "action_ref": "",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_114412db-2cd9-43bc-85bd-acc1f54bd785",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_114412db-2cd9-43bc-85bd-acc1f54bd785",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_114412db-2cd9-43bc-85bd-acc1f54bd785",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_114412db-2cd9-43bc-85bd-acc1f54bd785",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_114412db-2cd9-43bc-85bd-acc1f54bd785"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_a9dcae62-848e-4781-8588-044ab4ed6d73",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_a9dcae62-848e-4781-8588-044ab4ed6d73",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_a9dcae62-848e-4781-8588-044ab4ed6d73",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_a9dcae62-848e-4781-8588-044ab4ed6d73",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_a9dcae62-848e-4781-8588-044ab4ed6d73"
 }
